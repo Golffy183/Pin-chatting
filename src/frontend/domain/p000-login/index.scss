@@ -1,0 +1,152 @@
+$bg-primary: #ffffff;
+$bg-secondary: #f2f2f2;
+$button-form-disabled: #6b7280;
+$button-form: #1e71c9;
+$button-form-text: theme('colors.gray.300');
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page {
+  @include center();
+  width: 100%;
+  background: linear-gradient(180deg, $bg-primary 0%, $bg-secondary 100%);
+}
+
+.login-container {
+  @include center();
+  max-width: 100%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.select-language {
+  @include center();
+  width: 100%;
+  margin-top: 1rem;
+  flex-direction: row;
+  gap: 0 0.5rem;
+}
+
+.border-style {
+  @include center();
+  padding: auto;
+  border: 1px solid;
+  width: 100%;
+  border-radius: 5px;
+  border-color: theme('colors.gray.300');
+  background-color: white;
+  margin-bottom: 0.5rem;
+  &::placeholder {
+    color: theme('colors.gray.400');
+  }
+  &:focus {
+    outline: none;
+    background-color: white;
+    &::placeholder {
+      color: theme('colors.gray.500');
+    }
+    border-color: theme('colors.gray.600');
+  }
+}
+
+.error-style {
+  border: 2px solid theme('colors.red.500');
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  padding: 0.125rem 0 0.125rem 0;
+}
+
+.input-form {
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.125rem;
+  color: #4b5563;
+  flex-grow: 1;
+  border-top: none;
+  border-bottom: none;
+  border-left-width: calc(2px * calc(1));
+  border-right: none;
+  border-color: theme('colors.gray.300');
+  &::placeholder {
+    color: theme('colors.gray.400');
+  }
+  &:focus {
+    outline: none;
+    background-color: white;
+    &::placeholder {
+      color: theme('colors.gray.500');
+    }
+    border-color: theme('colors.gray.600');
+  }
+}
+
+.input-error {
+  margin-bottom: 0.5rem;
+  color: red;
+  text-align: left;
+  font-size: small;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.button-show-password {
+  @include center();
+  width: 2.5rem;
+  flex-grow: 0;
+  border-left: 2px solid theme('colors.gray.300');
+  cursor: pointer;
+}
+
+.button-form {
+  width: 100%;
+  margin-top: 1rem;
+  display: block;
+  background: $button-form;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  &:disabled {
+    background-color: $button-form-disabled;
+    color: $button-form-text;
+  }
+  &:hover:disabled {
+    background-color: $button-form-disabled;
+    color: $button-form-text;
+  }
+  &:hover {
+    background-color: darken($button-form, 10%);
+  }
+}
+
+.dev-password {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.button-color {
+  width: 100%;
+  margin-top: 1rem;
+  display: block;
+  background: $button-form;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+  }
+}

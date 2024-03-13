@@ -1,0 +1,20 @@
+{
+  "form": {
+    "username": {
+      "placeholder": "ผู้ใช้งาน"
+    },
+    "password": {
+      "placeholder": "รหัสผ่าน"
+    },
+    "login": "เข้าสู่ระบบ",
+    "color": "เปลี่ยนสีปุ่ม"
+  },
+  "validate": {
+    "required": "กรุณากรอกในช่องว่าง",
+    "min": "กรุณากรอกมากกว่า {{count}} ตัวอักษร",
+    "userNotFound": "ไม่พบผู้ใช้งาน",
+    "passwordWrong": "รหัสผ่านไม่ถูกต้อง",
+    "email": "รูปแบบอีเมลไม่ถูกต้อง",
+    "networkRequestFailed": "ไม่สามารถเชื่อมต่ออินเตอร์เน็ตได้"
+  }
+}

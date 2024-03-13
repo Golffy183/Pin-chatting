@@ -1,0 +1,21 @@
+{
+  "form": {
+    "username": {
+      "placeholder": "Username"
+    },
+    "password": {
+      "placeholder": "Password"
+    },
+    "login": "Login",
+    "color": "Change button color"
+  },
+  "validate": {
+    "required": "Please filling space",
+    "min_one": "Please fill more than {{count}} character.",
+    "min_other": "Please fill more than {{count}} characters.",
+    "userNotFound": "User not found",
+    "passwordWrong": "Wrong password",
+    "email": "Invalid email type",
+    "networkRequestFailed": "Can't connect network"
+  }
+}
