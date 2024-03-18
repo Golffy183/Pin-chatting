@@ -34,8 +34,7 @@ analytics/*
 
 todo-list.md
 
-hosting_major/public/*
-hosting_minor/public/*
+hosting/public/*
 
 #capacitor js
 ios

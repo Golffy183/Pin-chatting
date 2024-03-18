@@ -84,9 +84,9 @@ export default defineConfig({
   resolve: {
     dedupe: ['react'],
   },
-  // esbuild: {
-  //   drop: ['console', 'debugger'],
-  // },
+  esbuild: {
+    drop: ['console', 'debugger'],
+  },
   build: {
     // outDir: './hosting/public',
     cssCodeSplit: true,
